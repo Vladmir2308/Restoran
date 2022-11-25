@@ -1,0 +1,53 @@
+@font-face{
+    font-family: "PTsans_B";
+    src: url("fonts/PTSans-Bold.woff") format("woff");
+}
+
+@font-face{
+    font-family: "PTsans_R";
+    src: url("fonts/PTSans-Regular.woff") format("woff");
+}
+
+*,
+*::after,
+*::before{
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+	margin: 0;
+}
+
+body{
+	font-family: "PTsans_R";
+	font-size: 16px;
+	line-height: 22px;
+	color: #000;
+
+	margin: 0;
+}
+
+
+
+
+
+
+/* Footer */
+
+
+
+
+
+/* Button */
+
+
+
+
+
+
+/* Media */
+
+
+
+
+
