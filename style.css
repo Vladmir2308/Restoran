@@ -27,19 +27,464 @@ body{
 	margin: 0;
 }
 
+.container{
+    max-width: 1080px;
+    
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+/* Header */
+.header{
+    background-color: #fff;
+    
+    padding: 10px 0;
+    
+    box-shadow: 0 4px 0 #fff;
+}
+
+.header__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Nav */
+.nav{
+    display: flex;
+}
+
+.nav__link{
+    position: relative;
+    
+    color: #000;
+    font-family: "PTsans_B";
+    text-decoration: none;
+    
+    margin-right: 75px;
+    
+    transition: color .4s linear;
+    
+}
+
+.nav__link:hover{
+    color: #e93c3c;
+}
+
+.nav__link::after{
+    content: ".";
+    
+    position: absolute;
+    right: -40px;
+    bottom: 9px;
+    
+    color: #c7b5ac;  
+    font-size: 32px;   
+}
+
+.nav__link:last-child{
+    margin-right: 0;
+}
+
+.nav__link:last-child::after{
+    display: none;
+}
+
+/* Page Intro */
+.page__intro{
+    background: url(img/intro_bg.jpg) center no-repeat;
+    background-size: cover;
+    
+    height: 640px;
+}
+
+.intro__content{
+    max-width: 750px;
+    
+    margin: 0 auto;
+    text-align: center;
+}
+
+.intro__logo{
+    margin-top: 110px;
+}
+
+.intro__title{
+    margin: 50px 0 25px;
+}
+
+.intro__icon{
+    margin-bottom: 25px;
+}
+
+/* Page Content */
+.page__content{
+    height: 900px;
+    
+    background: url("img/content_bg_1.jpg") center no-repeat;
+    background-size: cover;
+    
+    padding-top: 305px;
+}
+
+.content__menu{
+    color: #fff;
+    
+    max-width: 720px;
+    
+    padding: 0 25px 55px 30px;
+    
+    border: 5px solid #fff;
+}
+
+.content__menu__title{
+    font-size: 3.125em;
+    line-height: 2.273em;
+    letter-spacing: 6px;
+    
+    overflow: hidden;
+    
+    display: inline;
+    
+    margin-left: 30px;
+    margin-right: 70px;
+    
+    overflow: auto;
+    
+    background-color: rgba(1, 1, 1, 0);
+}
+
+.content__menu__text{
+    font-size: 1.25em;
+    line-height: 1.364em;
+    
+    margin-left: 30px;
+}
+
+.content__menu__inner{
+    margin: 55px 0 0 30px;
+    
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.content__menu__price{
+    font-family: "PTsans_B";
+    font-size: 3.75em;
+    line-height: 1.1em;
+}
+
+/* Page Menu */
+.page__menu{
+    background-color: #fff;
+    
+    padding: 80px 0 50px;
+}
+
+.title{
+    font-size: 3.75em;
+    line-height: 1.32em;
+    letter-spacing: 2px;
+    
+    color: #000;
+}
+
+.title.white{
+    color: #fff;
+}
+
+.menu{
+    position: relative;
+}
+
+.menu::after{
+    content: "";
+    
+    width: 100%;
+    height: 2px;
+    
+    background-color: rgba(1, 1, 1, 0.1);
+    
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+}
+
+.menu.active{
+    margin-bottom: 140px;
+}
+
+.menu.active::after{
+    content: "";
+    
+    width: 100%;
+    height: 2px;
+    
+    background-color: rgba(1, 1, 1, 0.1);
+    
+    position: absolute;
+    bottom: -55px;
+    left: 0;
+}
+
+.menu__top{
+    display: flex;
+    align-items: center;
+    
+    margin: 30px 0 30px 15px;
+}
+
+.menu__title{
+    font-family: "PTsans_B";
+    font-size: 1.5em;
+    
+    margin-left: 40px;
+}
+
+.menu__inner{
+    display: flex;
+    justify-content: space-between;
+    
+    margin-bottom: 40px;
+}
+
+.menu__inner__item{
+    flex-basis: 180px;
+    text-align: center;
+}
+
+.menu__item__title{
+    font-family: "PTsans_B";
+    font-size: 1.25em;
+    line-height: 1.1em;
+    
+    margin: 25px 0;
+}
+
+.menu__item__weight{
+    margin: 25px 0;
+}
+
+.menu__item__price{
+    font-size: 1.875em;
+    line-height: 1.1em;
+    
+    font-family: "PTsans_B";
+}
+
+/* Page Content 2 */
+.page__content.another__bg{
+    background: url("img/content_bg_2.jpg") center no-repeat;
+    background-size: cover;
+    
+    padding: 100px 0 0;
+    margin-right: 0;
+}
+
+.content__menu__title.another{
+    margin: 10px 0 0 27px;
+    line-height: 1;
+    
+    letter-spacing: 5px;
+}
 
 
+.content__menu__text.with__margin{
+    margin-top: 35px;
+}
 
+/* Scroll Bar */
+.scroll__bar{
+    display: flex;
+    justify-content: space-between;
+}
 
+.scroll__item{
+    overflow: hidden;
+    
+    height: 197px;
+    
+    position: relative;
+}
 
+.white__space{
+    position: absolute;
+    background-color: #fff;
+    
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    
+    opacity: 0.7;
+    transition: opacity .4s linear;
+}
+
+.white__space:hover{
+    opacity: 0;
+}
+
+/* Page Restaurants */
+.page__restaurants{
+    background: url(img/location_bg.jpg) center no-repeat;
+    background-size: cover;
+    
+    height: 940px;
+    
+    padding: 120px 0 70px;
+}
+
+.restaurants__content{
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: space-between;
+    
+    height: 100%;
+}
+
+.restaurants__inner{
+    display: flex;
+    justify-content: space-between;
+}
+
+.restaurants__item{
+    padding: 40px 60px;
+    
+    transition: border .4s linear;
+    
+    color: #fff;
+    
+    border: 5px solid rgba(1, 1, 1, 0);
+}
+
+.restaurants__item:hover{
+    border: 5px solid #e93c3c;
+}
+
+.restaurants__item__title{
+    font-size: 1.5em;
+    font-family: "PTsans_B";
+    line-height: 0.91em;
+}
+
+.restaurants__item__text{
+    line-height: 1.41em; 
+    
+    margin: 30px 0 40px;
+    
+    width: 220px;
+}
+
+.restaurants__item__working{
+    font-size: 0.75em;
+    font-family: "PTsans_B";
+    line-height: 0.91em;
+    
+    margin-bottom: 25px;
+}
+
+.restaurants__item__days{
+    display: inline-block;
+    font-size: 0.875em;
+    line-height: 1.41em;
+    margin-right: 35px;
+}
+
+.restaurants__item__times{
+    display: inline-block;
+    font-size: 0.875em;
+    line-height: 1.41em;
+}
+
+.container.restaurants{
+    height: 100%;
+}
 /* Footer */
+.footer{
+    height: 550px;
+    color: #000;
+    
+    padding: 90px 0;
+}
 
+.footer__inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
+.footer__pressroom{
+    flex-basis: 60%;
+}
 
+.pressroom__content{
+    margin-top: 50px;
+}
 
+.content__item{
+    margin-bottom: 50px;
+}
 
+.item__date{
+    color: rgba(1, 1, 1, 0.7);
+    
+    font-size: 0.75em;
+}
+
+.footer__social__title{
+    font-size: 1.5em;
+    font-family: "PTsans_B";
+    line-height: 1.1em;
+    
+    margin-bottom: 35px;
+}
+
+.footer__social__text{
+    font-size: 0.8125em;
+    font-family: "PTsans_B";
+    line-height: 1.1em;
+    
+    margin-top: 45px;
+}
+
+.footer__social__imgT{
+    margin-left: -5px;
+}
+
+.footer__social__imgG{
+     margin-left: -5px;
+}
+
+.input__email{
+    padding: 15px 10px;
+    
+    border: 1px solid #b2b2b2;
+    
+    width: 280px;
+    
+    margin: 15px 0 0 0;
+    
+    outline: #b2b2b2;
+}
+
+.input__email::placeholder{
+    color: #000;
+}
 /* Button */
+.button{
+    display: inline-block;
+    
+    padding: 23px 25px;
+    
+    border: 1px solid #b2b2b2;
+    
+    background: url("img/submit_icon.png") center no-repeat;
 
+    
+    cursor: pointer;
+}
 
 
 
