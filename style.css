@@ -441,6 +441,10 @@ body{
     margin-bottom: 35px;
 }
 
+.social__link{
+    text-decoration: none;
+}
+
 .footer__social__text{
     font-size: 0.8125em;
     font-family: "PTsans_B";
@@ -449,12 +453,24 @@ body{
     margin-top: 45px;
 }
 
+.footer__social__imgF:hover{
+    transform: translateY(-5px);
+}
+
 .footer__social__imgT{
     margin-left: -5px;
 }
 
+.footer__social__imgT:hover{
+    transform: translateY(-5px);
+}
+
 .footer__social__imgG{
      margin-left: -5px;
+}
+
+.footer__social__imgG:hover{
+    transform: translateY(-5px);
 }
 
 .input__email{
@@ -464,26 +480,40 @@ body{
     
     width: 280px;
     
-    margin: 15px 0 0 0;
-    
     outline: #b2b2b2;
+    
+    
+}
+
+.form__inner{
+    display: flex;
+    margin-top: 10px;
 }
 
 .input__email::placeholder{
     color: #000;
 }
+
 /* Button */
 .button{
-    display: inline-block;
+    display: block;
     
-    padding: 23px 25px;
+    height: 48px;
+    width: 70px;
     
     border: 1px solid #b2b2b2;
+    border-left: 0;
     
     background: url("img/submit_icon.png") center no-repeat;
 
     
     cursor: pointer;
+    
+    transition: background .4s linear;
+}
+
+.button:hover{
+    background-color: #dbdbdb;
 }
 
 
