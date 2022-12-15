@@ -36,11 +36,22 @@ body{
 
 /* Header */
 .header{
+    position: absolute;
+    z-index: 1;
+    
+    min-width: 100%;
+    
     background-color: #fff;
     
     padding: 10px 0;
     
     box-shadow: 0 4px 0 #fff;
+}
+
+.header.fixed{
+    position: fixed;
+    
+    width: 100%;
 }
 
 .header__inner{
@@ -106,7 +117,7 @@ body{
 }
 
 .intro__logo{
-    margin-top: 110px;
+    margin-top: 150px;
 }
 
 .intro__title{
@@ -602,6 +613,10 @@ body{
 }
 
 @media (max-width: 540px){
+    .intro__logo{
+        margin-top: 180px;
+    }
+    
     .title{
         font-size: 3.25em;
         text-align: center;
